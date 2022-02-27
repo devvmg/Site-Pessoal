@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Rosario', sans-serif;
+	color: #cccccc;
+	background-color: #2F3136;
+}
+#padrao
+{
+	margin-left:500px;
+}
+/* ----------------NAVBAR--------------- */
+.barra
+{
+	width: 80px;
+	height: 100%; 
+	position: fixed;
+	background-color: #202225;
+	align-items: center; 
+	height: 100%;
+} 
+.iconsNav
+{
+	color: #828D97;
+}
+.iconsFinaisNav{
+	margin-bottom: 50px;
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+}
+.barra-nav 
+{
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+/* -----------------BODY---------------- */
+main
+{
+	margin-left: 280px; 
+	margin-right: 100px; 
+} 
+.titulo
+{
+	transition: 0.5s; 
+}
+.titulo h1
+{
+	font-size: 65px;
+}
+.titulo p 
+{
+	font-family: 'Rosario', sans-serif;
+	transition: 0.7s;
+	font-size: 18px;
+}
+.fotoTitulo
+{
+	width: 200px;
+	transition: 1.5s; 
+	border-radius: 65%; 
+	position: relative;
+	padding-top: 110px;
+}
+.fundo{
+	opacity: 0.1;
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	background-position: -100px -450px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.monteSiteDiv{
+	transition: 1s;
+	margin-top: 5%;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+.monteSiteDiv h1
+{
+	text-align: center;
+}
+.monteSiteDiv p
+{
+	font-size: 23px;
+	transition: 1s;
+	text-align: center;
+}
+/* ----------------OUTROS--------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Aladin', cursive;
+}
+
+ul li
+{
+	margin: 10px;
+	margin-top: 40px;
+	transition: 1.5s; 
+}
+
+a
+{
+	text-decoration: none;
+}
+a:link 
+{
+	color: #828D97;
+}
+  
+  /* visited link */
+a:visited 
+{ 
+	color: #828D97;
+}
+  
+  /* mouse over link */
+a:hover 
+{
+	transition: 0.3s; 
+	color: #67b550;
+}
+  
+  /* selected link */
+a:active
+{
+	color: #828D97;
+}
+/* ----------------FOOTER--------------- */
+
+footer
+{
+	height: 200px;
+	margin-top: 100%;
+	background-color: #202225;
+	text-align: center;
+}
