@@ -2,7 +2,7 @@
 <html lang="pt_BR">
 <head>
 
-	<meta charset="utf-8">
+	  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,7 +16,9 @@
 			<title>DEVini</title>
 </head>
 <body>
-	
+
+      <!-- -----------------BARRA----------------- -->
+
     <nav class="barra">
       <ul class="barra-nav">
           <li>
@@ -24,21 +26,24 @@
           </li> <!--Main-->
 
           <li>
-            <a class="iconsNav" href="#"><i class="fas fa-laptop-code fa-2x"></i></a>
+            <a class="iconsNav" href="#monteSite"><i class="fas fa-laptop-code fa-2x"></i></a>
           </li><!--Site-->
-          <li> 
-            <a class="iconsNav" href="#"><i class="fas fa-clipboard-list fa-2x"></i></a>
-          </li><!--Conhecimentos-->
           <li>
-            <a class="iconsNav" href="#"><i class="fas fa-graduation-cap fa-2x"></i></a>
-          </li><!--Cursos-->
-          <hr>
+            <a class="iconsNav" href="#sobreMim"><i class="fa-solid fa-user fa-2x"></i></a>
+          </li><!--sobre-->
+          <li> 
+            <a class="iconsNav" href="#competencias"><i class="fas fa-clipboard-list fa-2x"></i></a>
+          </li><!--Conhecimentos-->
+          <li> 
+            <a class="iconsNav" href="#portfolio"><i class="fa-solid fa-file-code fa-2x"></i></a>
+          </li><!--portifolio-->
+          
           <div class="iconsFinaisNav">
             <li>
-              <a class="iconsNav" href="#"><i class="fa-solid fa-icons fa-2x"></i></a>
+              <a class="iconsNav" href="#redes"><i class="fa-solid fa-icons fa-2x"></i></a>
             </li><!--Redes Sociais-->
               <li>
-                <a class="iconsNav" href="#" style="margin-right:50%; margin-left:3px;"><i class="fa-solid fa-envelope-open-text fa-2x"></i></a>
+                <a class="iconsNav" href="#faleComigo" style="margin-right:50%; margin-left:3px;"><i class="fa-solid fa-envelope-open-text fa-2x"></i></a>
               </li><!--Mensagem-->
             </div>
 
@@ -48,51 +53,196 @@
       <!-- -----------------INICIO----------------- -->
 
 <section id="principal">
-    <div class="container">
-      <main>
-        <br><br><br><br>
-        <div class="row titulo">
-          <div class="col">
+      <div class="fundoTitulo">
+        <div class="titulo">
+          <div>
             <br><br><br><br>
             <h1>Vinícius Miranda Gonzaga</h1>
             <br>
             <p><i class="fa-solid fa-code"></i> | Desenvolvedor Front-End</p>
             <p><i class="fa-solid fa-map-location-dot"></i>  | Brasília, DF - Brasil</p>
-          </div>
-          <div class="col">
+          </div> <!-- col -->
+          <div class="itensTitulo">
             <img class="fotoTitulo" src="media/perfil.jpg">
           </div>
-        </div>
-      </main>
-      <hr width="53%" style="margin-left: 280px;">
+        </div> <!-- titulo -->
       </div>
+
+
+<!-- ---MONTE SEU SITE--- -->
+
+
 </section><!--Principal-->
 <section id="monteSite">
     <div class="monteSiteDiv">
           <h1>Monte seu WebSite comigo</h1>
         <div>
             <p>
-              Atualmente, um site é importante para toda e qualquer empresa e/ou pessoa que tenha um desejo de desenvolver com algum projeto, com algum produto ou com informações que desejam ser compartilhadas.
+              Atualmente, um site é importante para toda e qualquer empresa e/ou pessoa 
+              que tenha um desejo de desenvolver algum projeto, com algum produto ou com 
+              informações que desejam ser compartilhadas.
             </p>
             <p>
-              Sendo assim, estarei aqui para auxiliá-lo, abaixo estão os tipos de sites os quais desenvolvo:
+              Sendo assim, estarei aqui para auxiliá-lo, abaixo estão os tipos de websites 
+              os quais desenvolvo:
             </p>
         </div>
-        <div>
-            
-        </div>
-    </div>
-</section>
-    <div class="container">
-      <section>
+        <div class="monteSiteCards">
+            <div class="Cards">
+              <h2>Blog</h2>
+              <div class="itemCards">
+                <i class="fa-solid fa-scroll fa-4x"></i>
+              </div>
+                <p>
+                  Um blog pode ser feito de qualquer tema e é uma boa opção para quem quer 
+                  expressar suas ideias e gostos no mundo da internet. Como um conteúdo sobre 
+                  cinema, jogos, livros, poemas e etc.
+                </p>
+              <div class="butaoCardsDiv">
+                <button class="butaoCards">Quero este!</button>
+              </div><!-- butaoCardsDiv -->
+            </div><!-- Cards -->
+            <div class="Cards">
+              <h2>Site</h2>
+                <div class="itemCards">
+                <i class="fa-solid fa-dice-d20 fa-4x "></i>
+              </div>
+                <p>
+                  Um site é uma boa escolha caso queira inserir seu negócio no ramo online, 
+                  é algo mais aprofundado, podendo ter dados de contato, informações mais focadas 
+                  em sua empresa, trabalhos e/ou projetos.
+                </p>
+                <div class="butaoCardsDiv">
+                  <button  class="butaoCards">Quero este!</button>
+                </div><!-- butaoCardsDiv -->
+            </div><!-- Cards -->
+        </div><!-- monteSiteCards -->
+        <div class="precoPrazo">
+          <p>
+            Os preços dos websites são individuais, sendo assim o <b>Blog</b> está saindo por 
+            <i style="font-size: 17px;">R$599,99</i> e o <b>Site</b> por <i style="font-size: 17px;">R$799,99</i>.
+          </p>
+          <p>
+            O prazo de entrega é relativo, ou seja após analisar os requisitos, conteúdos 
+            e funcionalidades de seu projeto eu informarei em quanto tempo ficará pronto.
+          </p>
+        </div> <!-- Preço/Prazo -->
+    </div><!-- monteSiteDiv -->
+</section><!-- monteSite -->
 
-      </section>
+
+<!-- ---SOBRE--- -->
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path class="onda1" fill="#202225" fill-opacity="1" d="M0,256L60,234.7C120,213,240,171,360,138.7C480,107,600,85,720,101.3C840,117,960,171,1080,181.3C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+</svg>
+<section id="sobreMim">
+    <div class="divSobre">
+      <h1>Sobre mim</h1>
+        <div style="margin-top: 50px;">
+          <p>
+            Me chamo Vinícius Miranda Gonzaga e sou um jovem e curioso programador em seu início 
+            de carreira que anseia por mais conhecimento na área de T.I., inicialmente na área 
+            de desenvolvimento Web e que está disposto a aprender e desfrutar desse universo 
+            de novidades e trabalhos.
+          </p>
+          <p>
+            Sou formado em <b>Análise e Desenvolvimento de Sistemas</b> pela Faculdade UDF - Centro 
+            Universitário de Brasília e, atualmente estou voltando ao ambiente universitário para 
+            cursar minha segunda graduação seguindo na área de T.I., <b>Ciência da Computação</b>,
+            para assim melhorar meus conhecimentos e conhecer melhor mais áreas que não foram 
+            aprofundadas e/ou abrangidas na minha primeira graduação.
+          </p>
       </div>
-    </div>
-	<footer id="footerCdM" class="container-fluid">
-    <br><br><br><br><br>
-    <p>&copy; 2022 - Site :: Todos os Direitos Reservados :: Vinícius Miranda Gonzaga</p>
-  </footer>
+
+
+<!-- ---CONHECIMENTOS--- -->
+
+
+      <div style="margin-top: 100px;">
+        <h1 id="competencias">Conhecimentos técnicos</h1>
+        <p>
+          Meus conhecimentos técnicos até então estão mais focados no front-end, até porque foi a 
+          área que mais me encontrei em T.I., acredito que meu senso de sempre tentar deixar objetos
+          ao meu redor organizados, simétricos e práticos me ajudam nesta empreitada.</p>
+        <p>
+          Entretanto sempre tive muita curiosidade pelo Back-End, Inteligência Artificial e a Projetos.
+        </p>
+      </div>
+        <br>
+          <div class="divCompetencia">
+            <div class="colEsqCompetencia">
+              <div class="itensColEsqCompetencia">
+                <div class="legenda"><span>HTML e CSS</span></div><!--legenda-->
+                <i class="fa-brands fa-html5 fa-3x"></i> & <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <div class="barra1"></div><!--barra1-->
+              </div><!--itensColEsqCompetencia-->
+              <div class="itensColEsqCompetencia">
+                <div class="legenda"><span>Bootstrap</span></div><!--legenda-->
+                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                <div class="barra2"></div><!--barra2-->
+              </div><!--itensColEsqCompetencia-->
+              <div class="itensColEsqCompetencia">
+                <div class="legenda"><span>JavaScript</span></div><!--legenda-->
+                <i class="fa-brands fa-js-square fa-3x"></i>
+                <div class="barra3"></div><!--barra3-->
+              </div><!--itensColEsqCompetencia-->
+            </div><!-- colEsqCompetencia -->
+            <div class="colDirCompetencia">
+              <div class="itensColDirCompetencia">
+                <div class="legenda"><span>Java</span></div><!--legenda-->
+                <i class="fa-brands fa-java fa-3x"></i>
+                <div class="barra4"></div><!--barra4-->
+              </div><!--itensColDirCompetencia-->
+              <div class="itensColDirCompetencia">
+                <div class="legenda"><span>PHP</span></div><!--legenda-->
+                <i class="fa-brands fa-php fa-3x"></i>
+                <div class="barra5"></div><!--barra5-->
+              </div><!--itensColDirCompetencia-->
+              <div class="itensColDirCompetencia">
+                <div class="legenda"><span>Photoshop</span></div><!--legenda-->
+                <img src="media/pslogo.png" style="width:50px;">
+                <div class="barra6"></div><!--barra6-->
+              </div><!--itensColDirCompetencia-->
+            </div><!-- colDirCompetencia -->
+          </div><!-- divCompetencia -->
+
+
+<!-- ---Portfolio--- -->
+
+
+      <div id="portfolio">
+        <h1>Portfolio</h1>
+      </div>
+
+    </div><!-- divSobre -->
+</section><!-- sobreMim -->
+
+
+
+<!-- ---REDES SOCIAIS--- -->
+
+
+
+
+
+<!-- ---FALE COMIGO--- -->
+
+
+<section id="rodape">
+    <div class="divRodape">
+
+    </div>  
+</section>
+
+	
+
+
+
+<footer>
+    <p>DEVini :: Vinícius Miranda Gonzaga :: &copy; 2022</p>
+</footer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
