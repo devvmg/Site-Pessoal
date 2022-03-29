@@ -10,17 +10,34 @@ body
 	color: #cccccc;
 	background-color: #2F3136;
 }
-#padrao
+
+::-webkit-scrollbar
 {
-	margin-left:500px;
+	width: 17px;
 }
-/* ----------------NAVBAR--------------- */
+::-webkit-scrollbar-track
+{ 
+	background-color: #202225;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #44484f;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: #656b75;
+}
+
+		/* ----------------NAVBAR--------------- */
+
 .barra
 {
-	width: 80px;
-	height: 100%; 
-	position: fixed;
+	width: 90px;
+	height: 100%;
+	position: fixed; 
 	background-color: #202225;
+	text-align: center;
 	align-items: center; 
 	height: 100%;
 } 
@@ -36,69 +53,348 @@ body
 }
 .barra-nav 
 {
-	align-items: center;
+	align-items: center; 
 	list-style: none;
-	padding: 0;
+	padding: 0; 
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 }
 
-/* -----------------BODY---------------- */
-main
+		/* ---------------CONTEÚDO--------------- */
+#principal
 {
-	margin-left: 280px; 
-	margin-right: 100px; 
-} 
+	background-image: url(https://cdn.wallpapersafari.com/59/89/FguWa9.gif);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 400px;
+}
+.fundoTitulo
+{
+	background-color: rgba(0 , 0 , 0 , 0.5);
+	height: 400px;
+}
 .titulo
 {
-	transition: 0.5s; 
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	transition: 0.5s;
+	align-items: center; 
+    max-width: 1200px;
+    margin: 0 300px 0 450px;
+	padding-top: 50px;
 }
 .titulo h1
 {
+	padding: 0 75px 0 0;
 	font-size: 65px;
 }
 .titulo p 
 {
+	padding-left: 25px;
 	font-family: 'Rosario', sans-serif;
 	transition: 0.7s;
 	font-size: 18px;
 }
+.itensTitulo
+{
+	padding: 70px 0 0 0;
+}
 .fotoTitulo
 {
-	width: 200px;
-	transition: 1.5s; 
-	border-radius: 65%; 
+	width: 220px;
+	transition: 2s; 
+	border-radius: 100%;
 	position: relative;
-	padding-top: 110px;
+	padding: 0 0 0 0; 
 }
-.fundo{
-	opacity: 0.1;
-	width: 100%;
-	height: 350px;
-	object-fit: cover;
-	background-position: -100px -450px;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
+
+
+hr
+{
+	max-width: 1200px;
+	margin: 90px 25px 0 0;
 }
+
+
+/*Monte seu WebSite comigo*/
+
 .monteSiteDiv{
-	transition: 1s;
-	margin-top: 5%;
-	margin-left: 12%;
-	margin-right: 12%;
+	max-width: 2000px;
+    margin: 0 200px 0 350px;
 }
 .monteSiteDiv h1
 {
+	max-width: 1200px;
+	margin-top: 100px;
 	text-align: center;
 }
 .monteSiteDiv p
 {
+	max-width: 1200px;
 	font-size: 23px;
 	transition: 1s;
 	text-align: center;
 }
-/* ----------------OUTROS--------------- */
+.monteSiteCards
+{
+	display: flex;
+	flex-direction: row;
+	max-width: 1200px;
+	align-items: center;
+	list-style: none;
+}
+.Cards
+{
+	box-shadow: 2px 2px 2px 1px rgba(190, 190, 190, 0.3);
+	width: 700px;
+	height: 700px;
+	background-color: #202225;
+	border-radius: 15px;
+	margin: 50px;
+}
+.Cards p
+{
+	margin: 28px;
+}
+.itemCards
+{
+	margin-top: 65px;
+	text-align: center;
+}
+.Cards h2
+{
+	transition: 3s; 
+	margin-top: 30px;
+	text-align: center;
+}
+.Cards p
+{
+	margin-top: 80px;
+}
+.butaoCardsDiv
+{ 
+	color: #cccccc;
+	margin-top: 90px;
+	align-items: center;
+	text-align: center;
+}
+.butaoCardsDiv button:hover
+{
+	color: #cccccc;
+	transition: 0.3s;
+	background-color: #67b550;
+	box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.3);
+}
+.butaoCards
+{
+	font-size: 30px;
+	font-family: 'Aladin', cursive;
+	color: #202225;
+	width: 250px;
+	height: 65px;
+	background-color: #828D97; 
+}
+.precoPrazo p
+{
+	max-width: 1200px;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+
+/*Sobre Mim*/
+
+
+.onda1
+{
+	bottom: 0;
+}
+#sobreMim
+{
+	padding-left: 13%;
+	padding-right: 12%;
+	height: 1900px;
+	background-color: #202225;
+}
+.divSobre
+{
+	max-width: 1200px;
+    margin: 0 50px 0 200px;
+	flex-direction: row;
+}
+.fotoSobre
+{
+	width: 30%;
+}
+#sobreMim p
+{
+	font-size: 23px;
+}
+
+
+/*Conhecimentos*/
+
+
+.divCompetencia
+{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+.colEsqCompetencia
+{
+	margin: 0 50px 0 200px;
+	max-width: 600px;
+	text-align: left;
+}
+.colDirCompetencia 
+{
+	margin: 0 50px 0 200px;
+	max-width: 600px;
+
+}
+.barra1 , .barra2 , .barra3 , .barra4 , .barra5 , .barra6
+{
+	border-radius: 4px;
+	height: 25px;
+  	padding: 2px;
+  	background-color: #cccccc;
+	display: flex; 
+	margin: 10px 0;
+}
+.barra1::before /*HTML e CSS*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 85%;
+	background-color: #67b550;
+}
+.barra2::before /*BOOTSTRAP*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 85%;
+	background-color: #67b550;
+}
+.barra3::before /*JS*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 50%;
+	background-color: #67b550;
+}
+.barra4::before /*JAVA*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 50%;
+	background-color: #67b550;
+}
+.barra5::before /*PHP*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 50%;
+	background-color: #67b550;
+}
+.barra6::before /*PS*/
+{
+	content: "";
+	border-radius: 3px;
+	margin: 2px;
+	width: 100%;
+	background-color: #67b550;
+}
+.itensColEsqCompetencia .legenda , .itensColDirCompetencia .legenda
+{
+  	text-align: center;
+  	background-color: rgba(111, 115, 120, 0.5);
+	border-radius: 20px 0px;
+	margin: 0 0 7px 0;
+  	visibility: hidden;
+  	display: block;
+  	padding: 10px;
+}
+.itensColEsqCompetencia:hover .legenda , .itensColDirCompetencia:hover .legenda
+{
+  	visibility: visible;
+}
+
+.itensColEsqCompetencia , .itensColDirCompetencia
+{
+	min-width: 150px;
+	text-align: center;
+	margin: 50px;
+}
+
+/*Portfolio*/
+
+#portfolio
+{
+	margin-top: 100px;
+}
+
+/*Redes Sociais*/
+
+
+
+/*Fale Comigo*/
+
+#rodape
+{
+	height: 400px;
+	background-image: url(https://cdn.wallpapersafari.com/59/89/FguWa9.gif);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.divRodape
+{
+	height: 400px;
+	background-color: rgba(0 , 0 , 0 , 0.5);
+}
+
+
+		/* ----------------FOOTER--------------- */
+
+footer
+{
+	margin: 0;
+	height: 100%; 
+	background-color: #202225;
+	text-align: center;
+}
+footer p
+{
+	margin: 0 ;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/* ----------------OUTROS--------------- */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Aladin', cursive;
 }
@@ -136,13 +432,4 @@ a:hover
 a:active
 {
 	color: #828D97;
-}
-/* ----------------FOOTER--------------- */
-
-footer
-{
-	height: 200px;
-	margin-top: 100%;
-	background-color: #202225;
-	text-align: center;
 }
