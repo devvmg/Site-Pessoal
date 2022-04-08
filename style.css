@@ -29,7 +29,9 @@ body
 	background-color: #656b75;
 }
 
-		/* ----------------NAVBAR--------------- */
+/*_____________________________________________________________________*/
+/*|                              Menu / Nav                           |*/
+/*|___________________________________________________________________|*/
 
 .barra
 {
@@ -61,7 +63,10 @@ body
 	flex-direction: column;
 }
 
-		/* ---------------CONTEÚDO--------------- */
+/*_____________________________________________________________________*/
+/*|                             Apresentação                          |*/
+/*|___________________________________________________________________|*/
+
 #principal
 {
 	background-image: url(https://cdn.wallpapersafari.com/59/89/FguWa9.gif);
@@ -69,12 +74,12 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 400px;
+	height: 450px;
 }
 .fundoTitulo
 {
 	background-color: rgba(0 , 0 , 0 , 0.5);
-	height: 400px;
+	height: 450px;
 }
 .titulo
 {
@@ -120,7 +125,9 @@ hr
 }
 
 
-/*Monte seu WebSite comigo*/
+/*_____________________________________________________________________*/
+/*|                           Monte seu Site                          |*/
+/*|___________________________________________________________________|*/
 
 .monteSiteDiv{
 	max-width: 2000px;
@@ -180,7 +187,7 @@ hr
 	color: #cccccc;
 	margin-top: 90px;
 	align-items: center;
-	text-align: center;
+	text-align: center; 
 }
 .butaoCardsDiv button:hover
 {
@@ -191,6 +198,7 @@ hr
 }
 .butaoCards
 {
+	border-radius: 3px;
 	font-size: 30px;
 	font-family: 'Aladin', cursive;
 	color: #202225;
@@ -205,19 +213,16 @@ hr
 	font-size: 14px;
 }
 
+/*_____________________________________________________________________*/
+/*|                              Sobre Mim                            |*/
+/*|___________________________________________________________________|*/
 
-/*Sobre Mim*/
 
-
-.onda1
-{
-	bottom: 0;
-}
 #sobreMim
 {
 	padding-left: 13%;
 	padding-right: 12%;
-	height: 1900px;
+	height: 1300px;
 	background-color: #202225;
 }
 .divSobre
@@ -235,9 +240,9 @@ hr
 	font-size: 23px;
 }
 
-
-/*Conhecimentos*/
-
+/*_____________________________________________________________________*/
+/*|                            Conhecimentos                          |*/
+/*|___________________________________________________________________|*/
 
 .divCompetencia
 {
@@ -253,15 +258,16 @@ hr
 }
 .colDirCompetencia 
 {
-	margin: 0 50px 0 200px;
+	margin: 0 200px 0 50px;
 	max-width: 600px;
+	text-align: right;
 
 }
 .barra1 , .barra2 , .barra3 , .barra4 , .barra5 , .barra6
 {
 	border-radius: 4px;
 	height: 25px;
-  	padding: 2px;
+  	padding: 3px;
   	background-color: #cccccc;
 	display: flex; 
 	margin: 10px 0;
@@ -336,100 +342,292 @@ hr
 	margin: 50px;
 }
 
-/*Portfolio*/
+/*_____________________________________________________________________*/
+/*|                              Portfolio                            |*/
+/*|___________________________________________________________________|*/
 
 #portfolio
 {
-	margin-top: 100px;
+	text-align: center;
+	height: 400px;
+	max-width: 1200px;
+    margin: 0 300px 0 450px;
+}
+#portfolio p
+{
+	font-size: 23px;
+}
+.divBotoesPortfolio
+{
+	padding: 30px 0;
+}
+.botoesPortfolio
+{
+	margin: 0 10px;
+	font-size: 30px;
+	font-family: 'Aladin', cursive;
+	color: #202225;
+	width: 250px;
+	height: 65px;
+	background-color: #828D97;
+	border-radius: 3px;
+}
+.botoesPortfolio:hover
+{
+	color: #cccccc;
+	transition: 0.3s;
+	background-color: #67b550;
+	box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.3);
 }
 
-/*Redes Sociais*/
-
-
-
-/*Fale Comigo*/
+/*RODAPE Nele tem as Redes e o Fale Comigo*/
 
 #rodape
 {
-	height: 400px;
+	height: 550px;
 	background-image: url(https://cdn.wallpapersafari.com/59/89/FguWa9.gif);
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	max-height: 100%;
+}
+.fundoRodape
+{
+	height: 550px; 
+	background-color: rgba(0 , 0 , 0 , 0.5);
+	display: flex;
+	flex-direction: row;
 }
 .divRodape
 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 1200px;
+    margin: 0 300px 0 450px;
+	padding: 100px 0;
+}
+
+/*_____________________________________________________________________*/
+/*|                            Redes Sociais                          |*/
+/*|___________________________________________________________________|*/
+
+#redes
+{
 	height: 400px;
-	background-color: rgba(0 , 0 , 0 , 0.5);
+	width: 500px;
+	margin-top: 100px;
+}
+.iconsRedes
+{
+	display: flex;
+	flex-direction: column;
+}
+#redes a
+{
+	min-width: 150px;
+	color: #cccccc;
+	margin: 10px;
+}
+#redes a:hover
+{
+	transition: 0.5s; 
+	color: #67b550;
+	margin: 10px;
+}
+.creditos
+{
+	display: flex;
+	flex-direction: row;
+}
+.textoCreditos
+{
+	padding-top: 25px;
+	max-width: 200px;
 }
 
+/*_____________________________________________________________________*/
+/*|                             Fale Comigo                           |*/
+/*|___________________________________________________________________|*/
 
-		/* ----------------FOOTER--------------- */
-
-footer
+.divFale
 {
-	margin: 0;
-	height: 100%; 
-	background-color: #202225;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur( 10px );
+	-webkit-backdrop-filter: blur( 10px );
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(255 , 255 , 255 , 0.1);
+
+	height: 400px;
+	width: 500px; 
+	max-width: 600px;
+}
+.divFale h3
+{
 	text-align: center;
+	padding: 30px 0 0 0;
 }
-footer p
+.divFale input
 {
-	margin: 0 ;
+	border: 3px outset #cccccc;
+	padding: 5px 0 3px 10px;
+	border-radius: 5px;
+	margin: 0 5px;
+	
 }
-/**/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		/* ----------------OUTROS--------------- */
-
-h1, h2, h3, h4, h5, h6 {
+.divFale input:focus , textarea:focus
+{
+	outline: none;
+}
+.divFale textarea
+{
+	text-align: center;
+	resize: none;
+	border: 3px outset #cccccc;
+	padding: 5px 0 3px 10px;
+	border-radius: 5px;
+}
+.divFale button
+{
+	margin: 10px 10px;
+	font-size: 30px;
 	font-family: 'Aladin', cursive;
+	color: #202225;
+	width: 150px;
+	height: 45px;
+	background-color: #cccccc;
+	border-radius: 3px; 
 }
+.divFale button:hover
+{
+	color: #cccccc;
+	transition: 0.3s;
+	background-color: #67b550;
+	box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.3);
+}
+.formIdent
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px 12% 20px 12%;
+}
+.formEnv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*|                              PORTFOLIO                            |*/
+/*|___________________________________________________________________|*/
+
+#principalPortfolio
+{
+	background-image: url(https://cdn.wallpapersafari.com/59/89/FguWa9.gif);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 200px;
+}
+.fundoTituloPortfolio
+{
+	background-color: rgba(0 , 0 , 0 , 0.5);
+	height: 200px;
+}
+.tituloPortfolio
+{
+	text-align: center;
+	transition: 0.5s;
+    max-width: 1200px;
+    margin: 0 300px 0 450px;
+	padding: 50px 0;
+}
+.tituloPortfolio h1
+{
+	padding: 0 75px 0 0;
+	font-size: 65px;
+}
+
+
+
+#conteudoPort
+{
+	max-width: 1200px;
+    margin: 0 300px 0 450px;
+	height: 500px;
+}
+.textoConteudoPort
+{
+	margin: 50px 0 0 0;
+	border-bottom: 3px solid #202225;
+	border-radius: 50px;
+}
+.textoConteudoPort p
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+#carrosselTrabalhos
+{
+	width: 100vh;
+}
+#divTrabalhosPort
+{
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+}
+.imagensPort
+{
+	scroll-snap-align: start;
+	flex: none;
+}
+.imagensPort img
+{
+	width: 200px;
+}
+
+
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*|                               Padrões                             |*/
+/*|___________________________________________________________________|*/
+
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Aladin', cursive;font-weight: lighter; }
+h1 {font-size: 40px;}
+h2 {font-size: 35px;}
+h3 {font-size: 30px;}
+
+a {text-decoration: none;}
+a:link {color: #828D97;}
+a:hover {transition: 0.3s; color: #67b550;}
+a:active {color: #828D97;}
+a:visited {color: #828D97;}
 
 ul li
 {
 	margin: 10px;
 	margin-top: 40px;
 	transition: 1.5s; 
-}
-
-a
-{
-	text-decoration: none;
-}
-a:link 
-{
-	color: #828D97;
-}
-  
-  /* visited link */
-a:visited 
-{ 
-	color: #828D97;
-}
-  
-  /* mouse over link */
-a:hover 
-{
-	transition: 0.3s; 
-	color: #67b550;
-}
-  
-  /* selected link */
-a:active
-{
-	color: #828D97;
 }
