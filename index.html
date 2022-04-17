@@ -7,15 +7,16 @@
     <link href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/b7b3825ffa.js" crossorigin="anonymous"></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
+      <link rel="icon" type="imagem/png" href="media/logoAss.png" />
 			<title>DEVvini</title>
 </head>
-<body>
+<body> 
 
   <!--_____________________________________________________________________-->
   <!--|                              MENU / NAV                           |-->
@@ -82,7 +83,7 @@
 <section id="monte-seu-site">
     <div class="monteSiteDiv">
           <h1>Monte seu WebSite comigo</h1>
-        <div>
+        <div class="textoInicialMonte">
             <p>
               Atualmente, um site é importante para toda e qualquer empresa e/ou pessoa 
               que tenha um desejo de desenvolver algum projeto, com algum produto ou com 
@@ -105,7 +106,31 @@
                   cinema, jogos, livros, poemas e etc.
                 </p>
               <div class="butaoCardsDiv">
-                <button class="butaoCards">Quero este!</button>
+                <a href="#abrirModalBlog"><button class="butaoCards">Quero este!</button></a>
+                  <div id="abrirModalBlog" class="modalBlog">
+                    <div class="divIntModalBlog">
+                      <a href="#fechar" title="Fechar" class="fechar"><i class="fa-solid fa-xmark fa-2x"></i></a>
+                      <h2>Sua escolha é o Blog, certo?!</h2>
+                      <p style="border-bottom: 2px solid rgba(0 , 0 , 0 , 0.2); padding-bottom: 20px;">
+                        Um blog pode ser feito de qualquer tema e é uma boa opção para 
+                        quem quer expressar suas ideias e gostos no mundo da internet. 
+                        Como um conteúdo sobre cinema, jogos, livros, poemas e etc.
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O preço mínimo para o Blog está R$499,99;
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O método de pagamento será a vista, podendo ser divido em até 4x sem juros (depende do valor final do serviço);
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O tamanho do conteúdo interfere no valor final;
+                      </p>
+                      <p style="text-align: left; padding: 0 50px; margin-bottom: 35px;">
+                        - Mais informações no Contrato de Prestação de Serviço.
+                      </p>
+                      <a href="https://wa.me/5561996073412?text=Olá%20Vini!%20Gostei%20do%20seu%20trabalho%20e%20tenho%20interesse%20em%20dar%20prosseguimento%20com%20um%20*Blog*!%20🖼😉"><button class="butaoCards">Escolher</button></a>
+                    </div><!--divIntModalBlog-->
+                  </div><!--modalBlog-->
               </div><!-- butaoCardsDiv -->
             </div><!-- Cards -->
             <div class="Cards">
@@ -119,15 +144,39 @@
                   em sua empresa, trabalhos e/ou projetos.
                 </p>
                 <div class="butaoCardsDiv">
-                  <button  class="butaoCards">Quero este!</button>
+                  <a href="#abrirModalSite"><button  class="butaoCards">Quero este!</button></a>
+                  <div id="abrirModalSite" class="modalSite">
+                    <div class="divIntModalSite">
+                      <a href="#fechar" title="Fechar" class="fechar"><i class="fa-solid fa-xmark fa-2x"></i></a>
+                      <h2>Sua escolha é o Site, certo?!</h2>
+                      <p style="border-bottom: 2px solid rgba(0 , 0 , 0 , 0.2); padding-bottom: 20px;">
+                        Um site é uma boa escolha caso queira inserir seu negócio no ramo online, 
+                        é algo mais aprofundado, podendo ter dados de contato, informações mais 
+                        focadas em sua empresa, trabalhos e/ou projetos.
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O preço mínimo para o Site está R$499,99;
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O método de pagamento será a vista, podendo ser divido em até 4x sem juros (depende do valor final do serviço);
+                      </p>
+                      <p style="text-align: left; padding: 0 50px;">
+                        - O tamanho do conteúdo e funcionalidades interferem no valor final;
+                      </p>
+                      <p style="text-align: left; padding: 0 50px; margin-bottom: 35px;">
+                        - Mais informações no Contrato de Prestação de Serviço.
+                      </p>
+                      <a href="https://wa.me/5561996073412?text=Olá%20Vini!%20Gostei%20do%20seu%20trabalho%20e%20tenho%20interesse%20em%20dar%20prosseguimento%20com%20um%20*Site*!%20🖥😉"><button class="butaoCards">Escolher</button></a>
+                    </div><!--divIntModalSite-->
+                  </div><!--modalSite-->
                 </div><!-- butaoCardsDiv -->
             </div><!-- Cards -->
         </div><!-- monteSiteCards -->
         <div class="precoPrazo">
           <p>
             Os preços dos websites são individuais, todavia podem ter reajuste dependendo da quantidade 
-            do conteúdo presente. Sendo assim o <b>Blog</b> está saindo pelo preço mínimo de <i style="font-size: 17px;">R$599,99</i> 
-            assim como o <b>Site</b> por <i style="font-size: 17px;">R$799,99</i>.
+            do conteúdo presente.
+            Sendo assim o preço mínimo está por R$<i style="font-size: 19px;">499,99</i>.
           </p>
           <p>
             O prazo de entrega é relativo, ou seja após analisar os requisitos, conteúdos 
@@ -179,41 +228,41 @@
           área que mais me encontrei em T.I., acredito que meu senso de sempre tentar deixar objetos
           ao meu redor organizados, simétricos e práticos me ajudam nesta empreitada.</p>
         <p>
-          Entretanto sempre tive muita curiosidade pelo Back-End, Inteligência Artificial e a Projetos.
+          Entretanto sempre tive muita curiosidade pelo Back-End, Inteligência Artificial e com Projetos.
         </p>
       </div>
         <br>
           <div class="divCompetencia">
             <div class="colEsqCompetencia">
               <div class="itensColEsqCompetencia">
-                <div class="legenda"><span>HTML e CSS</span></div><!--legenda-->
+                <div class="legenda"><span>HTML e CSS <p style="font-size: 17px; color: #90b550;">Nível: Bom</p></span></div><!--legenda-->
                 <i class="fa-brands fa-html5 fa-3x"></i> & <i class="fa-brands fa-css3-alt fa-3x"></i>
                 <div class="barra1"></div><!--barra1-->
               </div><!--itensColEsqCompetencia-->
               <div class="itensColEsqCompetencia">
-                <div class="legenda"><span>Bootstrap</span></div><!--legenda-->
+                <div class="legenda"><span>Bootstrap<p style="font-size: 17px; color: #90b550;">Nível: Bom</p></span></div><!--legenda-->
                 <i class="fa-brands fa-bootstrap fa-3x"></i>
                 <div class="barra2"></div><!--barra2-->
               </div><!--itensColEsqCompetencia-->
               <div class="itensColEsqCompetencia">
-                <div class="legenda"><span>JavaScript</span></div><!--legenda-->
+                <div class="legenda"><span>JavaScript<p style="font-size: 17px; color: #90b550;">Nível: Básico</p></span></div><!--legenda-->
                 <i class="fa-brands fa-js-square fa-3x"></i>
                 <div class="barra3"></div><!--barra3-->
               </div><!--itensColEsqCompetencia-->
             </div><!-- colEsqCompetencia -->
             <div class="colDirCompetencia">
               <div class="itensColDirCompetencia">
-                <div class="legenda"><span>Java</span></div><!--legenda-->
+                <div class="legenda"><span>Java<p style="font-size: 17px; color: #90b550;">Nível: Básico</p></span></div><!--legenda-->
                 <i class="fa-brands fa-java fa-3x"></i>
                 <div class="barra4"></div><!--barra4-->
               </div><!--itensColDirCompetencia-->
               <div class="itensColDirCompetencia">
-                <div class="legenda"><span>PHP</span></div><!--legenda-->
+                <div class="legenda"><span>PHP<p style="font-size: 17px; color: #90b550;">Nível: Intermediário</p></span></div><!--legenda-->
                 <i class="fa-brands fa-php fa-3x"></i>
                 <div class="barra5"></div><!--barra5-->
               </div><!--itensColDirCompetencia-->
               <div class="itensColDirCompetencia">
-                <div class="legenda"><span>Photoshop</span></div><!--legenda-->
+                <div class="legenda"><span>Photoshop<p style="font-size: 17px; color: #90b550;">Nível: Avançado</p></span></div><!--legenda-->
                 <img src="media/pslogo.png" style="width:50px;">
                 <div class="barra6"></div><!--barra6-->
             </div><!--itensColDirCompetencia-->
@@ -241,7 +290,7 @@
           Acesse meu portfólio e/ou meu currículo!! 👨‍💻
         </p>
         <div class="divBotoesPortfolio">
-          <button class="botoesPortfolio">Currículo</button>
+          <a href="curriculum.html"><button class="botoesPortfolio">Currículo</button></a>
           <a href="portfolio.html"><button class="botoesPortfolio">Portfólio</button></a>
         </div><!-- divBotoesPortfolio -->
       </div><!-- portfolio -->
@@ -264,7 +313,6 @@
             <a href="https://www.linkedin.com/in/vinicius-miranda-gonzaga/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i> | LinkedIn</a>
             <a href="https://github.com/PiriDev" target="_blank"><i class="fa-brands fa-github fa-2x"></i> | GitHub</a>
             <a href="https://www.instagram.com/viniii.css/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i> | Instagram</a>
-            <a href="https://wa.me/556196073412?text=Olá%20Vini,%20como%20está?!" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i> | Whatsapp</a>
           </div>
           <div class="creditos">
             <img src="media/logoAss.png" style="width: 100px; max-width: 100px; max-height: 100px;">
@@ -285,13 +333,18 @@
           <div class="divFale">
             <h3>Alguma dúvida?! Me mande um email.</h3>
             <div class="divFormsFale">
-              <form>
+              <form name="FaleComigo" method="POST" action="https://formsubmit.co/900vinicius900@gmail.com">
                 <div class="formIdent">
-                  <input type="text" placeholder="Nome" maxlength="30">
-                  <input type="email" placeholder="Email" maxlength="40">
+                  <input type="text" name="Nome" placeholder="Nome" maxlength="30" required oninvalid="this.setCustomValidity('Como se chama mesmo?! 🤔')"oninput="this.setCustomValidity('')">
+                  <input type="email" name="Email" placeholder="Email" maxlength="40" required oninvalid="this.setCustomValidity('Opa, faltou seu email! 😄')"oninput="this.setCustomValidity('')">
                 </div>
                 <div class="formEnv">
-                  <textarea name="" id="textoFale" cols="40" rows="5" placeholder="Escreva sua mensagem" maxlength="180"></textarea>
+                  <input id="telefone" name="Telefone" type="text" placeholder="Telefone" maxlength="16" required oninvalid="this.setCustomValidity('Manda o zap por gentileza?! 📞😎')" oninput="this.setCustomValidity('')">
+                  <textarea name="Mensagem" id="textoFale" cols="40" rows="5" placeholder="Escreva sua mensagem" maxlength="180" required oninvalid="this.setCustomValidity('Ah Vamos lá, sem timidez, qual sua dúvida sobre mim ou sobre meu trabalho? 🤓')"oninput="this.setCustomValidity('')"></textarea>
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_autoresponse" value="Muito obrigado pelo seu Interesse! Entrarei em contato em Breve! 👊😉">
+                  <input type="hidden" name="_subject" value="Nova Mensagem do Site Vini!! 🥳">
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
                   <button type="submit">Enviar</button>
                 </div><!-- formEnv -->
               </form>
@@ -305,6 +358,7 @@
 </section><!-- rodape -->
 
 
+<script src="https://kit.fontawesome.com/b7b3825ffa.js" crossorigin="anonymous"></script>
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
