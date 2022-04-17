@@ -7,14 +7,14 @@
     <link href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/b7b3825ffa.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
+      <link rel="icon" type="imagem/png" href="media/logoAss.png" />
 			<title>DEVvini - Portfolio</title>
-</head>
+</head> 
 <body>
 
   <!--_____________________________________________________________________-->
@@ -60,16 +60,58 @@
     <p>
         Todos meus trabalhos estão também no meu <a target="_blank" href="https://github.com/PiriDev">GitHub</a> caso queira conferir o código e/ou afins! 
     </p> 
-    </div>
-    <div id="carrosselTrabalhos">
-        <div id="divTrabalhosPort">
-            <div class="imagensPort"><img src="media/none.png"></div>
-            <div class="imagensPort"><img src="media/none.png"></div>
-            <div class="imagensPort"><img src="media/none.png"></div>
-            <div class="imagensPort"><img src="media/none.png"></div>
-            <div class="imagensPort"><img src="media/none.png"></div>
+    </div><!--textoConteudoPort-->
+    <div id="trabalhos">
+      <div class="itensPort">
+        <a class="botaoImgPort" href="Trabalhos/Site Niten/index.html"><img src="media/niten.jpg"></a>
+        <div>
+        <h3>WebSite - Dojo Instituto Niten</h3>
+        <p>
+          Fiz este site baseado no site oficial do Dojo Instituto Niten, utilizei 
+          das imagens e textos lá presentes pra treinar meus conhecimentos da área 
+          de desenvolvimento Web.
+        </p>
+        <div class="badgesPort"><img src="media/html.png"><img src="media/css.png"><img src="media/bootstrap.png"></div>
         </div>
-    </div>
+      </div><!--itensPort-->
+      <div class="itensPort">
+        <a class="botaoImgPort" href=""><img src="media/none.png"></a>
+        <div>
+          <h3>WebSite - Regra de 3</h3>
+          <p>
+            Site feito para um cliente, a ideia era fazer um site para calcular 
+            regras de três de forma mais simples e acima de tudo ter um conteúdo 
+            para guiar o estudante que tiver utilzando.
+          </p>
+          <div class="badgesPort"><img src="media/html.png"><img src="media/css.png"><img src="media/js.png"></div>
+          </div>
+        </div>
+      </div><!--itensPort-->
+      <div class="itensPort">
+        <a class="botaoImgPort" href="Trabalhos/Landing/index.html"><img src="media/landing.jpg"></a>
+        <div>
+          <h3>Landing Page - ¡Descargar E-Book!</h3>
+          <p>
+            Página simples para simular um download de um E-Book (Em Espanhol).
+          </p>
+          <div class="badgesPort"><img src="media/html.png"><img src="media/css.png"><img src="media/js.png"></div>
+          </div>
+        </div>
+      </div><!--itensPort-->
+      <hr style="margin-bottom: 15px;"> 
+      <div class="itensPort">
+        <a class="botaoImgPort" href=""><img src="media/none.png"></a>
+        <div>
+          <h3>Aplicativo - Officer Assistant</h3>
+          <p>
+            Aplicativo feito durante minha faculdade para auxiliar na organização 
+            e administração de pequenos escritórios/clínicas onde precisam organizar
+            consultas, agendas e cadastros de clientes.
+          </p>
+          <div class="badgesPort"><img src="media/html.png"><img src="media/css.png"><img src="media/bootstrap.png"><img src="media/php.png"></div>
+          </div>
+      </div><!--itensPort-->
+    </div><!--trabalhos-->
 </section> <!--conteudoPort-->
     
 
@@ -92,7 +134,6 @@
             <a href="https://www.linkedin.com/in/vinicius-miranda-gonzaga/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i> | LinkedIn</a>
             <a href="https://github.com/PiriDev" target="_blank"><i class="fa-brands fa-github fa-2x"></i> | GitHub</a>
             <a href="https://www.instagram.com/viniii.css/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i> | Instagram</a>
-            <a href="https://wa.me/556196073412?text=Olá%20Vini,%20como%20está?!" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i> | Whatsapp</a>
           </div>
           <div class="creditos">
             <img src="media/logoAss.png" style="width: 100px; max-width: 100px; max-height: 100px;">
@@ -113,13 +154,18 @@
           <div class="divFale">
             <h3>Alguma dúvida?! Me mande um email.</h3>
             <div class="divFormsFale">
-              <form>
+              <form name="FaleComigo" method="POST" action="https://formsubmit.co/900vinicius900@gmail.com">
                 <div class="formIdent">
-                  <input type="text" placeholder="Nome" maxlength="30">
-                  <input type="email" placeholder="Email" maxlength="40">
+                  <input type="text" name="Nome" placeholder="Nome" maxlength="30" required oninvalid="this.setCustomValidity('Como se chama mesmo?! 🤔')"oninput="this.setCustomValidity('')">
+                  <input type="email" name="Email" placeholder="Email" maxlength="40" required oninvalid="this.setCustomValidity('Opa, faltou seu email! 😄')"oninput="this.setCustomValidity('')">
                 </div>
                 <div class="formEnv">
-                  <textarea name="" id="textoFale" cols="40" rows="5" placeholder="Escreva sua mensagem" maxlength="180"></textarea>
+                  <input id="telefone" name="Telefone" type="text" placeholder="Telefone" maxlength="16" required oninvalid="this.setCustomValidity('Manda o zap por gentileza?! 📞😎')" oninput="this.setCustomValidity('')">
+                  <textarea name="Mensagem" id="textoFale" cols="40" rows="5" placeholder="Escreva sua mensagem" maxlength="180" required oninvalid="this.setCustomValidity('Ah Vamos lá, sem timidez, qual sua dúvida sobre mim ou sobre meu trabalho? 🤓')"oninput="this.setCustomValidity('')"></textarea>
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_autoresponse" value="Muito obrigado pelo seu Interesse! Entrarei em contato em Breve! 👊😉">
+                  <input type="hidden" name="_subject" value="Nova Mensagem do Site Vini!! 🥳">
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
                   <button type="submit">Enviar</button>
                 </div><!-- formEnv -->
               </form>
@@ -133,6 +179,7 @@
 </section><!-- rodape -->
 
 
+<script src="https://kit.fontawesome.com/b7b3825ffa.js" crossorigin="anonymous"></script>
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
