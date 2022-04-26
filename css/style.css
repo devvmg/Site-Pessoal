@@ -939,6 +939,8 @@ ul li
 
 
 /*RESPONSIVIDADE*/
+@media screen and (max-height: 649px){}
+	
 @media screen and (max-width: 1295px)
 {
 
@@ -1138,25 +1140,31 @@ ul li
 	.iconsNav {font-size: 14px;}
 	.iconsNav {margin: 0}
 
-	.titulo {margin: 0 auto;}
-	.titulo h1 {padding: 10px; font-size: 50px; margin-right: 50px;}
-	.titulo p {padding: 0 10px; font-size: 18px; margin-right: 50px;}
-	.titulo img {width: 180px; margin: 50px 50px 0 0;}
-	.itensTitulo {margin: 0 auto; padding: 0};
-	#principal , .fundoTitulo {height: 900px;}
+	.titulo {margin: 0 auto; width: 375px;}
+	.titulo h1 {padding: 10px; font-size: 50px;}
+	.titulo p {padding: 0 10px; font-size: 18px;}
+	.titulo img {width: 180px; margin: 50px 0;}
+	.itensTitulo {margin: 0 auto; padding: 0;}
+	#principal , .fundoTitulo {height: 700px; width: 375px;}
 
 	.monteSiteDiv h1 {font-size: 45px;}
 	.textoInicialMonte {padding: 45px;}
 	.textoInicialMonte p {font-size: 15px;}
 	.Cards {max-width: 375px; height: 680px;} 
 	.Cards p {font-size: 18px;}
-	.precoPrazo {padding: 0 50px;}	
+	.precoPrazo {padding: 0 50px;}
+	.divIntModalBlog h2 {font-size: 30px;}	
+	.divIntModalBlog p {font-size: 15px;}
+	.divIntModalSite h2 {font-size: 30px;}	
+	.divIntModalSite p {font-size: 15px;}
+
 
 	#sobreMim {height: 2750px;}
 	.divSobre p {font-size: 15px;}
 
-	.divRodape {max-width: 375px;}
+	.divRodape {width: 375px; max-width: 375px;}
 	#fale-comigo {margin: 0 auto;}
+	#redes {width: 375px; max-width: 375px;}
 
 }
 
@@ -1165,6 +1173,7 @@ ul li
 	.iconsNav {font-size: 11px;}
 
 	#principal , .fundoTitulo {width: 320px;}
+	.titulo {width: 320px;}
 	.titulo h1 {margin-right: 0;}
 	.titulo p {margin-right: 0;}
 	.titulo img {width: 180px; margin: 50px 0;}
@@ -1173,6 +1182,12 @@ ul li
 	.textoInicialMonte p {font-size: 15px;}
 	.Cards {max-width: 320px; height: 680px;} 
 	.Cards p {font-size: 15px; padding: 20px;}
+	.divIntModalBlog {height: 750px;}
+	.divIntModalBlog h2 {font-size: 25px;}	
+	.divIntModalBlog p {font-size: 12px;}
+	.divIntModalSite {height: 750px;}
+	.divIntModalSite h2 {font-size: 25px;}	
+	.divIntModalSite p {font-size: 12px;}
 
 	#sobreMim {height: 2980px;}
 
