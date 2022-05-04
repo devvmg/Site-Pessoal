@@ -711,8 +711,8 @@ body
 }
 .botaoImgPort img 
 {
-	position: static;
 	opacity: 0.8;
+	position: static;
 	border-radius: 15% 0;
 	margin: 10px 0;
 	width: 200px;
@@ -1216,6 +1216,7 @@ ul li
 {
 	#principalPortfolio , .fundoTituloPortfolio {height: 250px;}
 	.tituloPortfolio {padding-top: 100px;}
+	.botaoImgPort img {opacity: unset;}
 }
 @media screen and (max-width: 1125px) 
 {
@@ -1233,4 +1234,41 @@ ul li
 {
 	#conteudoPort , #trabalhos {max-width: 550px; margin: 0 auto;}
 	.itensPort {max-width: 550px; width: 550px;}
+}
+@media screen and (max-width: 633px) 
+{
+	.tituloPortfolio h1{padding: 0;}
+	#conteudoPort , #trabalhos {max-width: 450px;}
+	.itensPort {max-width: 450px; width: 450px;}
+	.intensPortTexto h3 {padding: 0 5px;}
+	.intensPortTexto p {padding: 0 5px;}
+	.badgesPort {padding: 0 5px;}
+}
+@media screen and (max-width: 425px) 
+{
+	#conteudoPort , #trabalhos {max-width: 385px;}
+	.itensPort {max-width: 385px; width: 385px;}
+	.itensPortTexto h3 {padding: 50px 20px 0 10px; font-size: 25px;}
+	.itensPortTexto p {padding: 0 10px; font-size: 15px;}
+	.badgesPort img {width: 45px;}
+}
+@media screen and (max-width: 375px) 
+{
+	.badgesPort img {width: 40px;}
+	#conteudoPort , #trabalhos {max-width: 375px;}
+	.itensPort {max-width: 375px; width: 385px;}
+}
+@media screen and (max-width: 320px) 
+{
+	#conteudoPort{height: 2300px;}
+	.tituloPortfolio h1 {font-size: 50px;}
+
+	.textoConteudoPort p {font-size: 15px; padding: 0 8px;}
+	.itensPort {flex-direction: column-reverse;}
+	.botaoImgPort img {width: 150px;}
+	.badgesPort img {margin: 0 auto 25px auto; width: 50px;}
+	#conteudoPort , #trabalhos {max-width: 320px;}
+	.itensPort {max-width: 320px; width: 385px;}
+	.itensPortTexto h3 {margin: 0 auto; padding: 50px 0 10px 0;font-size: 20px; text-align: center;}
+	.itensPortTexto p {padding: 0 20px; font-size: 15px;}
 }
