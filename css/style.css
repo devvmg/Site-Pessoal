@@ -802,7 +802,7 @@ body
 		transform: translateX(10px);
 	}
 	to {
-		transform: translateX(-15px);
+		transform: translateX(-10px);
 	}
 }
 .conteudoEmail
@@ -943,8 +943,9 @@ ul li
 
 /*RESPONSIVIDADE*/
 
-/*PÁGINA PRINCIPAL*/
 
+
+/*PÁGINA PRINCIPAL*/
 @media screen and (max-height: 649px){}
 	
 @media screen and (max-width: 1295px)
@@ -1115,8 +1116,6 @@ ul li
 	#redes{max-width: 500px;}
 }
 
-
-
 @media screen and (max-width: 425px)
 {
 	.fundoTitulo{width: 425px;}
@@ -1211,6 +1210,7 @@ ul li
 }
 
 
+
 /* PORTFOLIO */
 @media screen and (max-width: 1294px) 
 {
@@ -1272,3 +1272,74 @@ ul li
 	.itensPortTexto h3 {margin: 0 auto; padding: 50px 0 10px 0;font-size: 20px; text-align: center;}
 	.itensPortTexto p {padding: 0 20px; font-size: 15px;}
 }
+
+
+
+/* CURRICULO */
+@media screen and (max-width: 1210px)
+{
+	h4 {margin: 0 0 15px 0;}
+
+	#curriculum {height: 3000px;}
+	.conteudoCurr {flex-direction: column; height: 2900px;}
+
+	.colunaCurrDir {max-width: 0;}
+	.colunaCurrEsq {max-width: 1200px; border: 0; margin: 0 auto; padding: 35px 190px;}
+	.colunaCurrEsq h1 , h2 , h3 , h4 {text-align: center;}
+	.colunaCurrEsq p {text-align: justify;}
+
+	.colunaCurrDir {max-width: 1200px; border: 0; margin: 0 auto; padding: 35px 190px;}
+	.colunaCurrDir h1 , h2 , h4 {text-align: center;}
+	.colunaCurrDir h3 , p {text-align: justify;}
+	.colunaCurrDir p {line-height: 1.6;}
+}
+@media screen and (max-width: 865px)
+{
+	#curriculum {height: 2900px;}
+	.conteudoCurr {height: 2800px;}
+	.colunaCurrEsq , .colunaCurrDir {padding: 35px 100px;}
+}
+@media screen and (max-width: 765px)
+{
+	#curriculum {height: 3000px;}
+	.conteudoCurr {height: 2900px;}
+	.colunaCurrEsq , .colunaCurrDir {padding: 35px 50px;}
+}
+@media screen and (max-width: 583px)
+{
+	#curriculum {height: 3000px;}
+	.conteudoCurr {height: 2900px;}
+	.colunaCurrEsq , .colunaCurrDir {padding: 35px 20px;}
+}
+@media screen and (max-width: 425px)
+{
+	#curriculum {height: 3400px;}
+	.conteudoCurr {height: 3300px;}
+}
+@media screen and (max-width: 375px)
+{
+	#curriculum {height: 3700px;}
+	.conteudoCurr {height: 3600px;}
+}
+@media screen and (max-width: 320px)
+{
+	#curriculum {height: 4100px;}
+	.conteudoCurr {height: 4000px;}
+}
+
+
+/* EMAIL */
+@media screen and (max-width: 425px)
+{
+	.tituloEmail h1 {font-size: 50px; margin: 0;}
+	#email h1 {font-size: 30px;}
+	#email p {font-size: 15px;}
+	#email img {width: 300px;}
+}
+@media screen and (max-width: 375px)
+{
+	.tituloEmail h1 {font-size: 40px; margin-top: 20px;}
+	#email h1 {font-size: 25px;}
+	#email p {font-size: 13px; margin: 0 0 10px 0;}
+}
+@media screen and (max-width: 320px) {.tituloEmail h1 {font-size: 30px;}}
