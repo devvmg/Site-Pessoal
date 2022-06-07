@@ -527,14 +527,27 @@ body
 
 #redes
 {
-	height: 400px;
+	height: 250px;
 	width: 500px;
-	margin-top: 100px;
+	margin-top: 25px;
+}
+#redes h3 
+{
+	margin-bottom: 50px;
+	display: grid;
+	place-items: center;
 }
 .iconsRedes
 {
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+}
+.redesImgTxt
+{
+	display: grid;
+	place-items: center;
 }
 #redes a
 {
@@ -550,13 +563,8 @@ body
 }
 .creditos
 {
-	display: flex;
-	flex-direction: row;
-}
-.textoCreditos
-{
-	padding-top: 25px;
-	max-width: 200px;
+	display: grid;
+	place-items: center;
 }
 
 /*_____________________________________________________________________*/
@@ -569,6 +577,8 @@ body
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	box-shadow: 3px 3px 3px rgba(255 , 255 , 255 , 0.1);
+
+	visibility: hidden;
 
 	position: static;
 	height: 450px;
@@ -999,18 +1009,17 @@ ul li
 	.colDirCompetencia {margin: 0 auto;}
 
 /*=-=-=-=-=-=-= FOOTER =-=-=-=-=-=-=*/
-	#redes{padding-left: 100px;}
-	#redes h3 {font-size: 25px;}
+	/* #redes{padding-left: 100px;}
+	#redes h3 {font-size: 25px;} */
 	.divFale {margin-left: 0;}
 } 
 @media screen and (max-width: 1114px)
 {
 	.Cards {height: 800px;} 
 	.botaoSite {margin-top: 173px;} 
-	#rodape , .fundoRodape {height: 900px;}
-	.divRodape {flex-direction: column-reverse; /*|*/ padding: 0;}
-
-	#redes{margin: 0 auto; /*|*/ padding-top: 80px;}
+/*	#rodape , .fundoRodape {height: 900px;}
+	.divRodape {flex-direction: column-reverse; padding: 0;}
+	#redes{margin: 0 auto; padding-top: 80px;} */
 }
 
 @media screen and (max-width: 1004px)
@@ -1063,10 +1072,10 @@ ul li
 	#sobreMim {height: 1500px;}
 
 /*=-=-=-=-=-=-= FOOTER =-=-=-=-=-=-=*/
-	#rodape , .fundoRodape {height: 900px;}
-	.divRodape {flex-direction: column-reverse; /*|*/ padding: 0;}
+	/* #rodape , .fundoRodape {height: 900px;}
+	.divRodape {flex-direction: column-reverse; padding: 0;}
 
-	#redes{margin: 0 auto; /*|*/ padding-top: 80px;}
+	#redes{margin: 0 auto; padding-top: 80px;} */
 }
 
 @media screen and (max-width: 761px)
@@ -1118,26 +1127,28 @@ ul li
 
 @media screen and (max-width: 425px)
 {
+
 	.fundoTitulo{width: 425px;}
 
 	.precoPrazo {padding: 50px;}
 
 	#sobreMim {height: 2600px;}
 
-	#rodape , .fundoRodape {height: 1000px;}
-	#redes {max-width: 425px; padding: 0; margin: 0 auto;} 
+	#redes {max-width: 425px; padding: 0; margin: 0 auto;}
+	.redesImgTxt {width: 72px; margin: 0; padding: 0;}
+	/* #rodape , .fundoRodape {height: 1000px;}
 	.divRodape {max-width: 425px; padding: 20px 0 0 0;}
 	.divRodape h3{padding: 30px 60px;} 
-	.divFale {width: 330px; height: 600px;} 
+	.divFale {width: 330px; height: 600px;} */
 	.formIdent {flex-direction: column; margin: 0; padding: 10px 0;}
 	.formIdent input {margin: 10px 0;}
 	.formEnv textarea {width: 200px; height: 200px;}
 	#telefone {margin-top: 0;}
 
-	.iconsRedes {margin: 0 15px;}
+	/*
 	.textoCreditos {margin: 0 auto;}
 	.textoCreditos img {max-width: 200px;}
-	.textoCreditos p {max-width: 200px;}
+	.textoCreditos p {max-width: 200px;} */
 }
 
 @media screen and (max-width: 375px)
@@ -1163,13 +1174,14 @@ ul li
 	.divIntModalSite h2 {font-size: 30px;}	
 	.divIntModalSite p {font-size: 15px;}
 
-
+	.iconsRedes {max-width: 320px;}
+	#redes{max-width: 375px;}
 	#sobreMim {height: 2750px;}
 	.divSobre p {font-size: 15px;}
 
-	.divRodape {width: 375px; max-width: 375px;}
+	/* .divRodape {width: 375px; max-width: 375px;}
 	#fale-comigo {margin: 0 auto;}
-	#redes {width: 375px; max-width: 375px;}
+	#redes {width: 375px; max-width: 375px;} */
 
 }
 
