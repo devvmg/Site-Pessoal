@@ -11,7 +11,7 @@
 ![Badge](https://img.shields.io/badge/Estilo-CSS-%237159c1?style=for-the-badge&logo=css3)
 
 <h2>➛ Explicação do programa:</h2>
-<p>
+<p> 
   Criei este site para justamente mostrar meu trabalho de um jeito mais acessível e prático 
   do que o GitHub mas que agregue junto à plataforma mencionada. Incluso ao site adicionei uma aba de Currículo caso chegue em recrutadores.
 </p>
